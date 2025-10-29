@@ -31,7 +31,7 @@ struct Home: View {
                             .frame(width: 70, height: 90)
                             .overlay(RoundedRectangle(cornerRadius: 50).stroke().opacity(0.3))
                     }
-                    .padding(30)
+                    .padding(15)
                     
                     //categoryList
                     CategoryListView
@@ -53,7 +53,7 @@ struct Home: View {
                         .foregroundColor(.black)
                     }
                     .padding(.horizontal, 30)
-                    .padding(.vertical, 15)
+                    .padding(.vertical, 5)
                     
                     //product list
                     ScrollView(.horizontal, showsIndicators: false){
@@ -117,7 +117,7 @@ struct ProductCard: View {
                 .scaledToFit()
                 .padding(.trailing, -200)
                 .rotationEffect(Angle(degrees: 30))
-                .opacity(0.8)
+                .opacity(0.9)
                 .shadow(radius: 10)
             ZStack{
                 VStack(alignment: .leading, content: {
@@ -136,7 +136,7 @@ struct ProductCard: View {
                     Spacer()
                     
                     HStack{
-                        Text("$\(product.price).0")
+                        Text("₹\(product.price).0")
                             .font(.system(size: 24,weight: .semibold))
                         
                         Spacer()

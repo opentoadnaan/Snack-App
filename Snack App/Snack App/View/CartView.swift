@@ -68,7 +68,7 @@ struct CartView: View{
                     Text("Total Amount")
                         .font(.system(size:24))
                     
-                    Text("USD \(cartManager.total)")
+                    Text("Rs. \(cartManager.total)")
                         .font(.system(size: 36, weight: .semibold))
                 }
                 .padding(25)
@@ -126,7 +126,7 @@ struct CartProductCard: View {
             })
             
             Spacer()
-            Text("$\(product.price)")
+            Text("₹\(product.price)")
                 .padding()
                 .background(.yellow .opacity(0.5))
                 .clipShape(Capsule())

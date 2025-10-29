@@ -85,7 +85,7 @@ struct SmallProductCard: View {
                     Spacer()
                     
                     HStack{
-                        Text("$\(product.price).0")
+                        Text("₹\(product.price).0")
                             .font(.system(size: 14,weight: .semibold))
                         
                         Spacer()

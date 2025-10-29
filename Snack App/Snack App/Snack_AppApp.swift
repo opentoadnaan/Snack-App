@@ -15,3 +15,6 @@ struct Snack_AppApp: App {
         }
     }
 }
+#Preview {
+    ContentView()
+}
